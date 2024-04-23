@@ -453,7 +453,7 @@ form{
   border-radius: 12px;
 }
 input {
-  width: 242px;
+  width: 100%;
   padding: 5px;
   border-radius: 5px;
   margin-top: 10px; /* Add space at the top */
@@ -463,6 +463,9 @@ input {
 input[type="submit"] {
   background-color: rgb(7, 7, 121);
   color: white;
+}
+textarea{
+  width: 100%;
 }
 .foot-img{
   position: absolute;
