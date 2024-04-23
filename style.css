@@ -499,7 +499,6 @@ input[type="submit"] {
     font-size: 25px;
   }
   .col-unpar{
-    background-color: black;
     color:#FFB703;
     font-weight: 600;
     padding: 10px;
@@ -509,7 +508,6 @@ input[type="submit"] {
     border-radius: 12px;
   }
   .col-unpar2{
-    background-color: black;
     color:#FFB703;
     font-weight: 600;
     padding: 10px;
