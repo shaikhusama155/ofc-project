@@ -20,12 +20,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.givecloud.co/npm/odometer@0.4.8/themes/odometer-theme-default.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
+  <!-- Link to jQuery library (needed for Slick) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="srcipt.js"></script>
+
+  <!-- Link to Slick CSS and JS files -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 </head>
 
 <body>
-  <div class="top">
+  <div class="top back-color">
     <a class="foot-touch touch" href="tel:"><i class="fa-solid fa-phone"></i> + 154 676 5623</a>
     <a class="foot-touch touch" href="mailto:support@Inscribe Publisher.com"><i class="fa-solid fa-envelope"></i>
       Support@inscribepublisher.com</a>
@@ -46,12 +55,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Book Publishing
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                  <li><a class="dropdown-item" href="#">Typesetting</a></li>
+                  <li><a class="dropdown-item" href="pages/book-publishing.html">Typesetting</a></li>
                   <li><a class="dropdown-item" href="#">Ebook Publishing</a></li>
                   <li><a class="dropdown-item" href="#">Proofreading</a></li>
                   <li><a class="dropdown-item" href="#">Formating</a></li>
@@ -124,13 +133,13 @@
   <div class="container-fluid" style="background-image:     linear-gradient(
     rgba(0, 100, 100, 0.45),
     rgba(0, 100, 100, 0.45)
-  ), url('img/head3back.jpg')">
+  ), url('img/head3back.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <h2 class="col-font pad-top">Reliable Services for
-            <span style="color:#1a0ec5;">Book Publisher</span> Services for
-            <span style="color:#1a0ec5;">Authors!</span>
+            <span style="color:#ffb703;">Book Publisher</span> Services for
+            <span style="color:#ffb703;">Authors!</span>
           </h2>
           <p class="col-font pad-top-min pad-bot">Begin your author's journey today by Publisher the book you were
             destined to
@@ -148,25 +157,28 @@
 
         </div>
         <div class="col-md-6 col-sm-12">
-          <img src="/img/GirlFRONT.png" width="60%" style="margin-top: 70px;margin-left: 160px;" alt="">
+          <img src="/img/GirlFRONT.png" class="top-girl" width="60%" alt="">
         </div>
       </div>
     </div>
   </div>
   </div>
-  <div class="publish" style="background: rgb(7,16,73);
-  background: linear-gradient(90deg, rgba(7,16,73,1) 0%, rgba(67,137,255,1) 80%);
-  ;padding: 10px;">
-    <center>
-      <div class="row">
-        <div class="col-md-2"><img src="/img/10.png" width="200" alt=""></div>
-        <div class="col-md-2"><img src="/img/3.png" width="200" alt=""></div>
-        <div class="col-md-2"><img src="/img/4.png" width="200" alt=""></div>
-        <div class="col-md-2"><img src="/img/7.png" width="200" alt=""></div>
-        <div class="col-md-2"><img src="/img/8.png" width="200" alt=""></div>
-        <div class="col-md-2"><img src="/img/9.png" width="200" alt=""></div>
-      </div>
-    </center>
+  <div class="back-color">
+    <div class="container-fluid back-color" id="gallery">
+      <!-- Gallery images -->
+      <img src="/img/10.png" width="200" alt="">
+      <img src="/img/3.png" width="200" alt="">
+      <img src="/img/4.png" width="200" alt="">
+      <img src="/img/7.png" width="200" alt="">
+      <img src="/img/8.png" width="200" alt="">
+      <img src="/img/9.png" width="200" alt="">
+      <img src="/img/10.png" width="200" alt="">
+      <img src="/img/3.png" width="200" alt="">
+      <img src="/img/4.png" width="200" alt="">
+      <img src="/img/7.png" width="200" alt="">
+      <img src="/img/8.png" width="200" alt="">
+      <img src="/img/9.png" width="200" alt="">
+    </div>
   </div>
   <div class="Potential pad-bot" style="">
     <div class="row">
@@ -219,31 +231,76 @@
       </div>
     </div>
   </div>
-  <div class="" >
+  <div class="container-fluid back-color" style="padding-top: 50px;padding-bottom: 50px;margin-bottom: 60px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="col-font">Our Expertise Lies in Crafting Award-Winning Books</h3>
+        </div>
+        <div class="col-md-8">
+          <img src="img/moon.jpg" width="15%" alt="">
+          <img src="img/axiom.jpg" width="15%" alt="">
+          <img src="img/finalist.jpg" width="15%" alt="">
+          <img src="img/global.jpg" width="15%" alt="">
+          <img src="img/gold.jpg" width="15%" alt="">
+          <img src="img/illum.jpg" width="15%" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
     <div class="container g-cta" style="background-image:     linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
-    ), url('img/UI\ MOCKUP.jpg'); margin-bottom: 60px;" >
+    ), url('img/UI\ MOCKUP.jpg'); margin-bottom: 60px;">
       <div class="row">
-          <div class="col-md-6 cta-hdg text-start">
-              <h1 class="col-font h-bold">Become a Best-Selling<br>Author Now.</h1>
-              <p class="col-font">Join us to become a best-selling author</p>
-              <div><button class="l-btn-w" type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lets Talk To An Expert</button></div>
-          </div>
-          <div class="col-md-6 mar-out">
-              <img src="img/ban-tonew.png" width="100%" alt="">
-          </div>
+        <div class="col-md-6 cta-hdg text-start">
+          <h1 class="col-font h-bold pad-left">Become a Best-Selling<br>Author Now.</h1>
+          <p class="col-font pad-left">Join us to become a best-selling author</p>
+          <div><button class="l-btn-w" type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lets Talk
+              To An Expert</button></div>
+        </div>
+        <div class="col-md-6 mar-out">
+          <img src="img/ban-tonew.png" width="100%" alt="">
+        </div>
       </div>
+    </div>
   </div>
+  <div style="background-image:     linear-gradient(
+    rgba(245, 187, 79, 0.01),
+    rgba(255, 165, 0, 0.01)
+  ), url('img/Books-scaled-1.jpg');">
+  <div class="container pad-top">
+    <div class="row pad-bot">
+      <div class="col-md-6">
+        <h1 class="pad-bot">
+          SHAPING READERS’<br>
+         <span style="font-weight: 200;color: #ffb703;">PERSPECTIVES WITH</span>
+          DISTINCTIVE EXCELLENCE</h1>
+          <div class="line"></div>
+          <h3 class="pad-top-min">Inscribe Publishers</h3>
+          <p>
+            Struggling to articulate your thoughts in writing? Let Inscribe Publishers bring your ideas to life. Explore our ghostwriting services and embark on a journey of content creation with experienced professionals who can transform your concepts into captivating stories. Our team of skilled writers will guide you through every stage, from initial drafts to compelling narratives. With their expertise and resources, we're here to support you on the path to becoming a successful author.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="list-boder">
+          <ul class="bodr-ul">
+            <li class="bodr-li">Qualified Writers</li>
+            <li class="bodr-li">Dedicated Account Managers</li>
+            <li class="bodr-li">Expert Proofreaders</li>
+            <li class="bodr-li">Professional Editors</li>
+            <li class="bodr-li">Top Notch Publication Specialists</li>
+            <li class="bodr-li">Adept Designers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="portfolio pad-bot" style="background: rgb(7,16,73);
-  background: linear-gradient(90deg, rgba(7,16,73,1) 0%, rgba(67,137,255,1) 80%);
-  ">
+</div>
+  <div class="portfolio pad-bot back-color">
     <center>
       <div class="row" style="width: 100%;">
-        <h2 class="pad-top-min ali-cen" style="font-size: 40px;font-weight: 700;">Our
-          <span style="color:white;font-weight: 700;">Portfolio</span>
-        </h2>
+        <h2 class="pad-top-min ali-cen col-font" style="font-size: 40px;font-weight: 700;">Our Portfolio</h2>
         <p class="ali-cen col-font">We have successfully completed many projects of varying scope and magnitudes. Our
           clients range from working professionals, and industry experts to
           small and large scale corporations. Below are a few books that we have written and published for our clients
@@ -276,8 +333,7 @@
     <br>
   </div>
   <center>
-    <div class="pad-top" id="odometerSection"
-      style="background-image: linear-gradient(rgba(0, 0, 10, 0.45), rgba(0, 0, 10, 0.45)), url('img/odo.jpg'); margin-top: -50px;">
+    <div class="pad-top" id="odometerSection" style="margin-top: -50px;background-color: black;">
       <h2 class="pad-bot" style="color:white;">Inscribe Publisher at a quick glance:</h2>
       <div class="container-fluid">
         <div class="row pad-bot">
@@ -288,19 +344,19 @@
           <div class="col-md-4 meter">
             <div id="j" class="odometer">110 </div><span>+</span>
             <h3>Five-star reviews on Trustpilot</h3>
-            
+
           </div>
           <div class="col-md-4 meter">
             <div id="k" class="odometer">110 </div><span>+</span>
             <h3>Retail partners worldwide</h3>
           </div>
+        </div>
       </div>
-    </div>
   </center>
   <div class="publish-1">
     <div class="row">
-      <div class="col-md-6 pad-top">
-        <h2 class="pad-top">
+      <div class="col-md-6 pad-top pad-bot">
+        <h2 class="">
           Inscribe Publisher - Where Writing Wizards Cast Their Spell
         </h2>
         <p class="pad-bot">Discover a comprehensive solution for all your authorial needs under one roof. Whether you're
@@ -311,23 +367,23 @@
         </p>
         <a href="" class="l-btn">Live Chat</a><a href="" class="l-btn-2">Get Started</a>
       </div>
-      <div class="col-md-6">
-        <img src="img/Book-writing-company-removebg-preview (1).png" width="90%" alt="">
+      <div class="col-md-6 pad-top pad-bot">
+        <img src="img/popup-img-removebg-preview.png" width="70%" alt="">
       </div>
     </div>
   </div>
   <div class="ban-style pad-top-min" style="background-image:     linear-gradient(
     rgba(0, 0, 10, 0.25),
     rgba(0, 0, 10, 0.25)
-  ), url('img/ban-mid.jpg'); margin-bottom: 60px;">
-   <div class="container">
-    <div class="row align-self-center">
-       <div class="col-md-5 align-self-center">
+  ), url('img/ban-mid.jpg');margin-bottom: 40px;">
+    <div class="container">
+      <div class="row align-self-center">
+        <div class="col-md-5 align-self-center">
           <div class="gtyur-img">
-             <img src="img/alone.png" width="100%" alt="">
+            <img src="img/alone.png" width="100%" alt="">
           </div>
-       </div>
-       <div class="col-md-7 my-auto align-self-center pad-top-min">
+        </div>
+        <div class="col-md-7 my-auto align-self-center pad-top-min">
           <h1 class="col-font h-bold">Get Your Book <br>Written at Affordable Rates</h1>
           <p class="col-font h-bold ">We are here to take your book to the next level.</p>
           <div class="row pad-bot">
@@ -341,17 +397,116 @@
             </div>
           </div>
           <div class="pad-bot">
-             <a class="l-btn" href="javascript:;">Get Started</a>
-             <a class="l-btn-t" href="">Live Chat</a>
-             <a class="l-btn-t" href="tel: 844-387-1932">Contact Us  +123 234 3432</a>
+            <a class="l-btn" href="javascript:;">Get Started</a>
+            <a class="l-btn-t" href="">Live Chat</a>
+            <a class="l-btn-t block-mob" href="tel: 844-387-1932">Contact Us +123 234 3432</a>
           </div>
-       </div>
+        </div>
+      </div>
     </div>
- </div>
   </div>
-  <div style="background: rgb(7,16,73);
-  background: linear-gradient(90deg, rgba(7,16,73,1) 0%, rgba(67,137,255,1) 80%);
-  " class="pad-bot">
+  <!-- <div class="publish-1 pad-bot pad-top-min">
+    <div class="container">
+      <center>
+        <div class="row">
+          <h1>OUR WRITING <span style="color: #1a0ec5;"> SOLUTIONS</span> </h1>
+          <p>Addressing All Your Literary Requirements</p>
+          <div class="col-md-3">
+            <div class="s-para solution">
+              <img src="img/ghost writing-01.png" width="30" alt="">
+              <span class="">
+                 GHOST WRITING</span>
+            </div>
+            <div class="s-para">
+              <img src="img/business book-01.png" width="30" alt="">
+              <span class="solution-w"> BUSINESS BOOKS</span>
+            </div> 
+            <div class="s-para solution">
+              <img src="img/non Fiction Book-01.png" width="30"  alt="">
+              <span class="">
+                NON-FICTION BOOKS</span>
+            </div>
+            <div class="s-para">
+              <img src="img/Audio Book Narrators.png" width="30" alt="">
+              <span class="solution-w"> AUDIOBOOK NARRATORS</span>
+            </div>
+            <div class="s-para solution">
+              <img src="img/Storywriting-01.png" width="30" alt="">
+              <span class="">
+                STORY WRITING</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="s-para">
+              <img src="img/Publishing-01.png" width="30" alt="">
+              <span class="solution-w">PUBLISHING</span>
+            </div>
+            <div class="s-para solution">
+              <img src="img/Fiction Book-01-01.png" width="30" alt="">
+              <span class="">FICTION BOOKS</span>
+            </div>
+            <div class="s-para">
+              <img src="img/Editing and Reviews-01.png" width="30" alt="">
+              <span class="solution-w">EDITING & REVIEW</span>
+            </div>
+            <div class="s-para solution">
+              <img src="" alt="">
+              <span class="">CHILDREN BOOK WRITING</span>
+            </div>
+            <div class="s-para">
+              <img src="img/Autobiography Writing-01.png" width="30" alt="">
+              <span class="solution-w">AUTOBIOGRAPHY WRITING</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="s-para solution">
+              <img src="img/Audio Book-01.png" width="30" alt="">
+              <span class="">AUDIO BOOK</span>
+            </div>
+            <div class="s-para">
+              <img src="img/memoirs-01.png" width="30" alt="">
+              <span class="solution-w">MEMOIRS</span>
+            </div>
+            <div class="s-para solution">
+              <img src="img/Book Formatting-01.png" width="30" alt="">
+              <span class="">BOOK FORMATTING</span>
+            </div>
+            <div class="s-para">
+              <img src="img/Novel Writing-01.png" width="30" alt="">
+              <span class="solution-w">NOVEL WRITING</span>
+            </div>
+            <div class="s-para solution">
+              <img src="img/Video Scripting-01.png" width="30" alt="">
+              <span class="">VIDEO SCRITPING</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="s-para">
+              <img src="img/Seo Content Writing-01.png" width="30" alt="">
+              <span class="solution-w">SEO CONTENT WRITING</span>
+            </div>
+            <div class="s-para solution">
+              <img src="img/Self help book-01.png" width="30" alt="">
+              <span class="">SELF-HELP BOOKS</span>
+            </div>
+            <div class="s-para">
+              <img src="img/Book Marketing-01.png" width="30" alt="">
+              <span class="solution-w">BOOK MARKETING</span>
+            </div>
+            <div class="s-para solution">
+              <img src="img/song writing-01.png" width="30" alt="">
+              <span class="">SONG WRITING</span>
+            </div>
+            <div class="s-para">
+              <img src="" width="30" alt="">
+              <span class="solution-w">E-BOOK WRITING</span>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+  </div> -->
+  <div class="pad-bot back-color">
     <div class="publish-1 cen-div">
       <div class="row">
         <div class="col-md-6 pad-top">
@@ -390,9 +545,7 @@
       </div>
     </div>
   </div>
-  <div style="background: rgb(7,16,73);
-  background: linear-gradient(90deg, rgba(7,16,73,1) 0%, rgba(67,137,255,1) 80%);
-  ">
+  <div class="back-color">
     <div class="publish-1 pad-bot">
       <div class="row">
         <h2 class="pad-top-min col-font ali-cen pad-bot">
@@ -485,10 +638,14 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid pad-top-min pad-bot" style="background-color: black;">
+    <h1 class="ali-cen col-font pad-bot">BOOKS BY GENRE</h1>
+    <img src="img/Banner-black.jpg" width="100%" alt="">
+  </div>
   <div class="pad-top pad-bot" style="background-image:     linear-gradient(
     rgba(0, 0, 0, 0.40),
     rgba(0, 0, 0, 0.40)
-  ), url('img/reviews.jpg');">
+  ), url('img/cta2.jpg');">
     <div class="publish-1">
       <div class="container">
         <h2 class="col-h2">
@@ -510,7 +667,7 @@
           </div>
           <div class="col-md-3 col-full col-f">
             <h1 class="col-num">03</h1>
-            <h5 class="col-hding">RESEARCH AND STRATEGY / LAUNCH CAMPAIGN
+            <h5 class="col-hding">RESEARCH AND STRATEGY LAUNCH CAMPAIGN
             </h5>
             <p class="col-unpar">Based on your book's category, demographics, and budget, we create a marketing strategy
               to reach your audience. Email, Facebook, advertising. Good blogs and social media promote your book.
@@ -526,18 +683,17 @@
       </div>
     </div>
   </div>
-  <div class="testimonial" style="background-image: linear-gradient(
+  <div class="testimonial pad-top-min pad-bot" style="background-image: linear-gradient(
     rgba(0, 0, 0, 0.10),
     rgba(0, 0, 0, 0.10)
-  ), url('img/testi-bg (1).jpg'); background-size: cover; padding: 100px;">
-    <h1 class=" ali-cen">Hesitant To
-      <span style="color:#1a0ec5;">Hire</span> Us?
+  ), url('img/testi-bg (1).jpg'); background-size: cover; padding-bottom: 50px;">
+    <h1 class=" ali-cen pad-top-min">Hesitant To
+      <span style="color:#ffb703;">Hire</span> Us?
     </h1>
     <h1 class="ali-cen pad-bot">Check Out What Are
-      <span style="color:#1a0ec5;">Our Customers</span> Saying!
+      <span style="color:#ffb703;">Our Customers</span> Saying!
     </h1>
-    <div class="container"
-      style="width: 60%; margin-left: auto;margin-right: auto;background-color: white; padding: 20px;border-radius: 12px;">
+    <div class="container test-sty pad-bot">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -665,9 +821,7 @@
     </div>
   </div>
   <center>
-    <div style="background: rgb(7,16,73);
-  background: linear-gradient(90deg, rgba(7,16,73,1) 0%, rgba(67,137,255,1) 80%);
-  ">
+    <div class="back-color">
       <div class="publish-1 pad-bot">
         <h2 class="col-font pad-top-min ali-cen">
           <span style="color: black;">Frequently</span> Asked Questions
@@ -896,7 +1050,7 @@
   <footer>
 
     <div class="socail-links"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('img/back-footer.jpg'); background-size: cover; background-repeat: no-repeat;">
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('img/back-footer.jpg'); background-size: cover; background-repeat: no-repeat;">
       <div class="container">
         <div class="row">
           <div class="col-md-7 pad-top-min">
@@ -925,7 +1079,7 @@
                 </ul>
               </div>
             </div>
-            <h3 class="help">Need help?</h3><a class="start" href="./Contact-us.php">Let's Get Started</a>
+            <h3 class="help">Need help?</h3><a class="l-btn-2" href="./Contact-us.php">Let's Get Started</a>
             <br /><br />
           </div>
           <div class="col-md-5">
@@ -970,13 +1124,38 @@
         <a class="foot-touch" href="#">Site Map</a>
       </div>
     </div>
+    <div class="last" style=" background-color: #ffb703;"
+  ">
+      <p class="col-font">© Copyright 2024 <a href="#" class="last-para-an">INSCRIBE PUBLISHER</a> All Rights Reserved.
+      </p>
+      <a href="" class="last-an">Privacy Policy </a> <a href="" class="last-an">Terms and Conditions</a> <a href=""
+        class="last-an">Terms of Membership</a>
+    </div>
 
   </footer>
 
 
 
 
-
+  <!-- Bootstrap JS and dependencies (jQuery) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#gallery').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        arrows: false // Hide navigation arrows
+      });
+    });
+  </script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.6/odometer.js"></script>
 
   <script>document.addEventListener('DOMContentLoaded', function () {
