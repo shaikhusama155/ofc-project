@@ -7,3 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownElement2 = document.getElementById('navbarDropdown3');
+
+    if (dropdownElement2) {
+        dropdownElement2.onclick = function() {
+            window.location.href = '/pages/cover-design.html';
+        };
+    }
+});
