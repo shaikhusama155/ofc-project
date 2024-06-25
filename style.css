@@ -1290,3 +1290,63 @@ margin: 25px !Important;
 .org-col{
   color: #FFB703;
 }
+.illi-sec{
+  margin-top: 10px;
+  height: 150px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.font-16{
+  font-size: 14px;
+}
+.img-size{
+  width: 100%;
+  height: 390px;
+}
+@media only screen and (max-width: 768px){
+  .img-size{
+    width: 80%;
+    height: 390px;
+    margin-top: 10px;
+    margin-left: auto 0;
+    margin-right: auto 0;
+  }
+}
+.col-0{
+  color: #FFB703;
+}
+.print{
+  font-size: 45px;
+  font-weight: 200;
+}
+.print-para{
+  font-size: 30px;
+}
+.btn-block-chn{
+  display: flex;           
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;   
+}
+.book-1{
+  border: 1px solid white;
+  padding:30px;
+}
+.book-2{
+  border: 1px solid white;
+  padding:30px;
+  height: 420px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.book-3{
+  border: 1px solid white;
+  padding:30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.h4-style{
+  font-size: 15px;
+  color: #FFB703;
+}

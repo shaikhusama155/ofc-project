@@ -17,3 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownElement3 = document.getElementById('navbarDropdown5');
+
+    if (dropdownElement3) {
+        dropdownElement3.onclick = function() {
+            window.location.href = '/pages/marketing.html';
+        };
+    }
+});
